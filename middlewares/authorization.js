@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken")
 const User = require("../models/user")
 
 module.exports = (req, res, next) => {
-    let authHeader = req.header("authorization");
+    let authHeader = req.header("Authorization");
     if(!authHeader){
         return res.status(401).json({
             message: "please authenticate first"
