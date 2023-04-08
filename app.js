@@ -15,7 +15,10 @@ app.use(bodyParser.json());
 
 app.use(cookieParser());
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://kaam-backend.cyclic.app",
+];
 
 app.use(
   cors({
